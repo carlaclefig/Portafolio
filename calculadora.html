@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__author" href="home.html">Carla Clemente</a>
+      <nav class="header__nav">
+        <a class="header__home" href="home.html">Inicio</a>
+        <a class="header__button" href="portafolio.html"> Portafolio </a>
+      </nav>
+    </header>
+    <div class="content">
+      <main class="calculator">
+        <h2 class="calculator__title">Calculadora de IMC</h2>
+        <section>
+          <label class="calculator__label" for="peso">Peso (kg):</label>
+          <input
+            class="calculator__input"
+            type="number"
+            id="peso"
+            name="peso"
+            placeholder="Escriba su peso aquí"
+            required
+          />
+        </section>
+        <section>
+          <label class="fcalculator__label" for="altura">Altura (m):</label>
+          <input
+            class="calculator__input"
+            type="number"
+            id="altura"
+            name="altura"
+            placeholder="Escriba su altura aquí"
+            required
+          />
+        </section>
+        <button class="calculator__button" onclick="calculaIMC()">
+          Calcular IMC
+        </button>
+        <section>
+          <label class="calculator__label" for="">Resultado IMC:</label>
+          <output class="calculator__output" id="resultado"></output>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">Puedo ayudarte?</p>
+        <a class="footer__button" href="#">Contáctame!</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
