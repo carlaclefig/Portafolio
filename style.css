@@ -1,0 +1,328 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"); */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f3f4f6;
+  height: 100vh;
+}
+
+/* Estilos para el header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1024px;
+  font-weight: 600;
+  margin: 8px auto;
+}
+
+.header__author {
+  font-size: 30px;
+  line-height: 36px;
+  color: #111827;
+}
+
+.header__home {
+  font-size: 16px;
+  line-height: 24px;
+  color: #db2777;
+  padding: 4px 8px;
+}
+
+.header__button {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  background-color: #db2777;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #111827;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43.2px;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0px auto;
+  margin-bottom: 12px;
+}
+
+/* Estilos para la sección 01 - home */
+
+.presentation {
+  background-color: #d6d3d1;
+  padding: 48px;
+}
+
+.presentation__content {
+  max-width: 1024px;
+  margin: 0px auto;
+  padding: 32px 0px;
+}
+
+.presentation__name {
+  font-weight: 600;
+  color: #db2777;
+}
+
+.presentation__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color: #111827;
+  margin-top: 8px;
+}
+
+/* Estilos para la sección 02 - home  */
+
+.strengths {
+  padding: 48px;
+  color: #111827;
+}
+
+.strengths__list {
+  max-width: 1024px;
+  gap: 32px;
+  margin: 0px auto;
+  padding: 15px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr));
+}
+
+.strengths__item {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.strengths__name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+}
+
+.strengths__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* Estilos para la sección 03 - home */
+
+.hobbies {
+  background-color: #e5e7eb;
+  padding: 48px;
+}
+
+.hobbies__content {
+  max-width: 1024px;
+  gap: 16px;
+  margin: 0px auto;
+  padding: 15px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+}
+
+.hobby__image {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hobby__info {
+  padding: 8px;
+}
+
+.hobby__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hobby__description {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* Estilos para footer */
+
+.footer {
+  background-color: #d6d3d1;
+  padding: 48px;
+}
+
+.footer__content {
+  max-width: 1024px;
+  margin: 16px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.footer__text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 57.6px;
+  margin-bottom: 50px;
+}
+
+.footer__button {
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #db2777;
+  border-radius: 8px;
+  padding: 14px 24px;
+}
+
+/* Estilos para la sección 01 - portafolio */
+
+.portfolio {
+  background-color: #f3f4f6;
+  padding: 48px;
+}
+.portfolio__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  max-width: 1024px;
+  margin: 0px auto;
+}
+
+.portfolio__list {
+  max-width: 1024px;
+  gap: 32px;
+  margin: 0px auto;
+  padding: 15px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+}
+
+.portfolio__item {
+  background-color: #ffffff;
+  border-top-left-radius: 8px;
+  padding: 24px;
+  max-height: 210px;
+}
+
+.portfolio__item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.portfolio__item-content {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 4px 0px;
+}
+
+.portfolio__item-language {
+  font-size: 12px;
+  line-height: 18px;
+  background-color: #fce7f3;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+/* Estilos para la calculadora */
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 68.2px 0px;
+}
+
+.calculator {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  border-style: solid;
+  border-color: #db2777;
+}
+
+.calculator__title {
+  margin-bottom: 32px;
+}
+.calculator__label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.calculator__input {
+  width: 100%;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+.calculator__input::placeholder {
+  text-align: center;
+}
+
+.calculator__button {
+  padding: 10px 20px;
+  background-color: #db2777;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 16px 0px 26px 0px;
+}
+
+.header__button:hover,
+.footer__button:hover,
+.calculator__button:hover {
+  background-color: #ea3486;
+}
+
+.header__button:active,
+.footer__button:active,
+.calculator__button:active {
+  background-color: #ee1275;
+}
+
+.calculator__output {
+  display: block;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #db2777;
+  padding: 10px 0px;
+}
